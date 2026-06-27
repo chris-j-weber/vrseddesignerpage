@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Immersive Production Design. Redefining Film Set Design through Virtual Reality and 3D Gaussian Splatting. A research project by HFF München.">
+    <title>VR Setdesigner | Immersive Spatial Scenography (HFF München)</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="lang-en"> <!-- Default language: English -->
+
+    <!-- Header Navigation -->
+    <header class="main-header" id="header">
+        <div class="header-container">
+            <a href="#" class="logo-group">
+                <span class="logo-main">VR SETDESIGNER</span>
+                <span class="logo-sub">HFF MÜNCHEN</span>
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#vision" class="nav-link">
+                    <span class="lang-en">Vision</span>
+                    <span class="lang-de">Vision</span>
+                </a>
+                <a href="#about" class="nav-link">
+                    <span class="lang-en">Project</span>
+                    <span class="lang-de">Projekt</span>
+                </a>
+                <a href="#showcase" class="nav-link">
+                    <span class="lang-en">Technology</span>
+                    <span class="lang-de">Technologie</span>
+                </a>
+                <a href="#collaboration" class="nav-link">
+                    <span class="lang-en">Partners</span>
+                    <span class="lang-de">Partner</span>
+                </a>
+                <a href="#team" class="nav-link">
+                    <span class="lang-en">Contact</span>
+                    <span class="lang-de">Kontakt</span>
+                </a>
+                <a href="#studies" class="nav-link">
+                    <span class="lang-en">Studies</span>
+                    <span class="lang-de">Studien</span>
+                </a>
+            </nav>
+            <div class="header-right-actions">
+                <div class="header-status">
+                    <span class="status-text lang-en">IN DEVELOPMENT</span>
+                    <span class="status-text lang-de">IN ENTWICKLUNG</span>
+                </div>
+                <div class="lang-switch">
+                    <button class="lang-btn active" id="btn-lang-en">EN</button>
+                    <span class="lang-switch-divider">|</span>
+                    <button class="lang-btn" id="btn-lang-de">DE</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-container">
+            <div class="hero-tag animate-fade-in">
+                <span class="lang-en">HFF MÜNCHEN RESEARCH PROJECT</span>
+                <span class="lang-de">FORSCHUNGSPROJEKT DER HFF MÜNCHEN</span>
+            </div>
+            
+            <h1 class="hero-title animate-slide-up">
+                <span class="lang-en">BRIDGING REALITY AND <span class="monochrome-highlight">VIRTUAL SCENOGRAPHY.</span></span>
+                <span class="lang-de">FOTOREALISTISCHE REALITÄT TRIFFT <span class="monochrome-highlight">VIRTUELLES SZENENBILD.</span></span>
+            </h1>
+            
+            <p class="hero-subtitle animate-fade-in-delay">
+                <span class="lang-en">A high-fidelity Virtual Reality design suite leveraging 3D Gaussian Splatting to bridge physical prop libraries and virtual production stages.</span>
+                <span class="lang-de">Eine hochpräzise Virtual-Reality-Designsuite auf Basis von 3D Gaussian Splatting, die physische Requisitenlager und virtuelle Produktionsbühnen verbindet.</span>
+            </p>
+            
+            <div class="hero-ctas animate-fade-in-delay">
+                <a href="#team" class="btn btn-primary" id="btn-contact">
+                    <span class="lang-en">Get in Touch <span class="arrow">&rarr;</span></span>
+                    <span class="lang-de">Kontakt aufnehmen <span class="arrow">&rarr;</span></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section class="vision-section" id="vision">
+        <div class="section-container">
+            <span class="section-tag center">
+                <span class="lang-en">THE VISION</span>
+                <span class="lang-de">DIE VISION</span>
+            </span>
+            <h2 class="section-title center">
+                <span class="lang-en">The Future Production Workflow</span>
+                <span class="lang-de">Der zukünftige Produktions-Workflow</span>
+            </h2>
+            
+            <div class="vision-grid">
+                <!-- Step 1 -->
+                <div class="vision-card">
+                    <div class="vision-card-image">
+                        <img src="assets/vision_capture.png" alt="Splat Capture">
+                    </div>
+                    <span class="vision-card-num">01</span>
+                    <h3 class="vision-card-title">
+                        <span class="lang-en">Capture</span>
+                        <span class="lang-de">Erfassung</span>
+                    </h3>
+                    <p class="vision-card-desc">
+                        <span class="lang-en">A location scout scans any physical space on set using a standard smartphone or a specialized splat camera like the Portal Cam.</span>
+                        <span class="lang-de">Ein Location Scout scannt einen physischen Raum vor Ort mit einem gewöhnlichen Smartphone oder einer speziellen Splat-Kamera wie der Portal Cam.</span>
+                    </p>
+                </div>
+                <!-- Step 2 -->
+                <div class="vision-card">
+                    <div class="vision-card-image">
+                        <img src="assets/vision_deliver.png" alt="Splat Delivery">
+                    </div>
+                    <span class="vision-card-num">02</span>
+                    <h3 class="vision-card-title">
+                        <span class="lang-en">Deliver</span>
+                        <span class="lang-de">Zustellung</span>
+                    </h3>
+                    <p class="vision-card-desc">
+                        <span class="lang-en">The captured photorealistic 3D Gaussian Splat scene is transmitted directly to the set designer's digital inbox in seconds.</span>
+                        <span class="lang-de">Die fotorealistische 3D-Gaussian-Splat-Szene wird in Sekundenschnelle direkt in das digitale Postfach des Szenenbildners übertragen.</span>
+                    </p>
+                </div>
+                <!-- Step 3 -->
+                <div class="vision-card">
+                    <div class="vision-card-image">
+                        <img src="assets/vision_design.png" alt="VR Design Workspace">
+                    </div>
+                    <span class="vision-card-num">03</span>
+                    <h3 class="vision-card-title">
+                        <span class="lang-en">Design</span>
+                        <span class="lang-de">Gestaltung</span>
+                    </h3>
+                    <p class="vision-card-desc">
+                        <span class="lang-en">The designer enters VR to explore the captured space and furnish it using digital props from virtual warehouses or generative assets.</span>
+                        <span class="lang-de">Der Designer begeht den Raum in VR und stattet ihn mit digitalen Möbeln aus virtuellen Fundus-Katalogen oder generierten Objekten aus.</span>
+                    </p>
+                </div>
+                <!-- Step 4 -->
+                <div class="vision-card">
+                    <div class="vision-card-image">
+                        <img src="assets/vision_share.png" alt="3D Set Sharing">
+                    </div>
+                    <span class="vision-card-num">04</span>
+                    <h3 class="vision-card-title">
+                        <span class="lang-en">Share</span>
+                        <span class="lang-de">Freigabe</span>
+                    </h3>
+                    <p class="vision-card-desc">
+                        <span class="lang-en">The finalized virtual set design is instantly shared as a 3D walkthrough with directors, camera departments, and production crews.</span>
+                        <span class="lang-de">Das fertige Set-Design wird sofort als dreidimensionaler Walkthrough mit Regie, Kamera und Produktion zur Begehung geteilt.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="section-container grid-2">
+            <div class="about-sticky-text">
+                <span class="section-tag">
+                    <span class="lang-en">THE INITIATIVE</span>
+                    <span class="lang-de">DIE INITIATIVE</span>
+                </span>
+                <h2 class="section-title">
+                    <span class="lang-en">Bridging Physical Craft and Virtual Realities</span>
+                    <span class="lang-de">Verbindung von Handwerk und virtueller Realität</span>
+                </h2>
+                <div class="about-image-container">
+                    <img src="assets/initiative_concept.png" alt="Juxtaposition of physical props and holographic layouts">
+                </div>
+            </div>
+            <div class="about-content">
+                <p class="lead-text lang-en">Originating as a specialized research project at the <strong>Hochschule für Fernsehen und Film München (HFF)</strong>, the VR Setdesigner initiative introduces a new paradigm for movie scenography.</p>
+                <p class="lead-text lang-de">Als Forschungsprojekt an der <strong>Hochschule für Fernsehen und Film München (HFF)</strong> begründet die Initiative VR Setdesigner ein neues Paradigma für das Szenenbild beim Film.</p>
+                
+                <p class="lang-en">Traditional set design relies on physical props, extensive location scouting, and flat 2D blueprinting. We bridge this gap by bringing photorealistic physical elements directly into an immersive virtual soundstage. By capturing actual furniture, textures, and structures using 3D Gaussian Splatting, set designers can arrange, scale, and evaluate sets within VR at a 1:1 scale before any physical construction begins.</p>
+                <p class="lang-de">Klassisches Szenenbild beruht auf physischen Requisiten, aufwändigem Location Scouting und zweidimensionalen Plänen. Wir schließen diese Lücke, indem wir fotorealistische physische Elemente direkt auf eine immersive virtuelle Bühne bringen. Durch die Erfassung realer Möbel, Texturen und Kulissen mittels 3D Gaussian Splatting können Szenenbildner Sets in VR im Maßstab 1:1 anordnen, skalieren und bewerten, noch bevor der physische Aufbau beginnt.</p>
+                
+                <div class="metric-grid">
+                    <div class="metric-card">
+                        <span class="metric-num">1:1</span>
+                        <span class="metric-label lang-en">Spatial Scale Precision</span>
+                        <span class="metric-label lang-de">Räumliche Präzision</span>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-num">3D GS</span>
+                        <span class="metric-label lang-en">Photorealistic Rendering</span>
+                        <span class="metric-label lang-de">Fotorealismus</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll-Linked Interactive Showcase Section -->
+    <section class="showcase-section" id="showcase">
+        <div class="showcase-container">
+            
+            <!-- Sticky Visuals Panel (Left) -->
+            <div class="showcase-visuals-wrapper">
+                <div class="showcase-visuals-inner">
+                    <div class="visual-frame">
+                        <img src="assets/capture_splat.png" id="img-splat" class="showcase-img active" alt="Gaussian Splatting reconstruction representation">
+                        <img src="assets/hero_bg.png" id="img-workspace" class="showcase-img" alt="Virtual Soundstage representation">
+                        <img src="assets/immersive_vr.png" id="img-vr" class="showcase-img" alt="VR set design inspection representation">
+                        <div class="visual-gradient-glow"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Scrolling Copy Panel (Right) -->
+            <div class="showcase-content-wrapper">
+                <div class="showcase-step-anchor" data-target="img-splat">
+                    <div class="step-card">
+                        <span class="step-number">01</span>
+                        <span class="step-tag lang-en">ACQUISITION</span>
+                        <span class="step-tag lang-de">ERFASSUNG</span>
+                        
+                        <h3 class="step-title">
+                            <span class="lang-en">3D Gaussian Splatting</span>
+                            <span class="lang-de">3D Gaussian Splatting</span>
+                        </h3>
+                        
+                        <p class="step-desc lang-en">Instead of modeling complex assets by hand, we leverage 3D Gaussian Splatting to digitize physical props, furniture, and sets. Every fine detail—from the grain of antique wood to complex light reflections on metallic surfaces—is captured and reproduced with lifelike fidelity in seconds.</p>
+                        <p class="step-desc lang-de">Statt komplexe Requisiten von Hand zu modellieren, nutzen wir 3D Gaussian Splatting, um physische Objekte und Kulissen zu digitalisieren. Jedes Detail – von der Maserung antiken Holzes bis hin zu Lichtreflexionen auf Metall – wird erfasst und sekundenschnell naturgetreu reproduziert.</p>
+                    </div>
+                </div>
+                
+                <div class="showcase-step-anchor" data-target="img-workspace">
+                    <div class="step-card">
+                        <span class="step-number">02</span>
+                        <span class="step-tag lang-en">COMPOSITION</span>
+                        <span class="step-tag lang-de">KOMPOSITION</span>
+                        
+                        <h3 class="step-title">
+                            <span class="lang-en">The Virtual Soundstage</span>
+                            <span class="lang-de">Die virtuelle Bühne</span>
+                        </h3>
+                        
+                        <p class="step-desc lang-en">Arrange captured splat elements on a virtual canvas that matches the exact physical dimensions of your production stage. Organise props into structured layers, control scene hierarchies, and position lighting grids to draft complete set layouts collaboratively.</p>
+                        <p class="step-desc lang-de">Ordne erfasste Splat-Objekte auf einer virtuellen Bühne an, die den exakten Abmessungen des echten Studios entspricht. Organisiere Requisiten in Ebenen, steuere Szenenhierarchien und positioniere Scheinwerfer, um Set-Layouts kollaborativ zu entwerfen.</p>
+                    </div>
+                </div>
+                
+                <div class="showcase-step-anchor" data-target="img-vr">
+                    <div class="step-card">
+                        <span class="step-number">03</span>
+                        <span class="step-tag lang-en">IMMERSION</span>
+                        <span class="step-tag lang-de">IMMERSION</span>
+                        
+                        <h3 class="step-title">
+                            <span class="lang-en">Real-Time VR Walkthrough</span>
+                            <span class="lang-de">Echtzeit-Begehung in VR</span>
+                        </h3>
+                        
+                        <p class="step-desc lang-en">Step inside your designs at true scale. Compatible with high-end VR headsets (Quest 3, HTC Vive, Varjo Aero), our custom graphics engine provides smooth, stable framerates for layered Gaussian Splatting clouds. Walk through sets, verify camera sightlines, and establish blocking positions before physical execution.</p>
+                        <p class="step-desc lang-de">Begehe deine Entwürfe im realen Maßstab. Kompatibel mit High-End-VR-Brillen (Quest 3, HTC Vive, Varjo Aero) liefert unsere Render-Engine flüssige Bildraten für vielschichtige Gaussian-Splatting-Punktwolken. Überprüfe Sichtachsen der Kamera und plane Positionen vor dem physischen Aufbau.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Industry Collaboration Section -->
+    <section class="collaboration-section" id="collaboration">
+        <div class="section-container">
+            <span class="section-tag center">
+                <span class="lang-en">VALIDATION</span>
+                <span class="lang-de">VALIDIERUNG</span>
+            </span>
+            <h2 class="section-title center">
+                <span class="lang-en">Developed for the Industry, Built with Experts</span>
+                <span class="lang-de">Für die Praxis entwickelt, mit Experten erprobt</span>
+            </h2>
+            
+            <div class="collab-grid grid-2">
+                <div class="collab-text">
+                    <p class="lead-text lang-en">Technology is only as good as its practical utility on a loud, fast-moving film set.</p>
+                    <p class="lead-text lang-de">Technologie ist nur so gut wie ihr tatsächlicher Nutzen am turbulenten Filmset.</p>
+                    
+                    <p class="lang-en">To ensure VR Setdesigner solves actual production bottlenecks, our development is guided by industry expertise. We collaborate closely with specialists from leading German television and motion picture studio complexes, as well as historic European theatrical prop repositories.</p>
+                    <p class="lang-de">Um sicherzustellen, dass VR Setdesigner echte Probleme löst, wird unsere Entwicklung von Branchenexperten begleitet. Wir arbeiten eng mit Spezialisten führender deutscher Film- und Fernsehstudios sowie historischer europäischer Theater- und Requisitenlager zusammen.</p>
+                    
+                    <p class="lang-en">Through this continuous feedback loop, we validate spatial accuracy, lighting response, material physics, and user ergonomics—ensuring our digital tools translate perfectly to physical camera lenses and carpentry workshops.</p>
+                    <p class="lang-de">In diesem kontinuierlichen Austausch validieren wir Maßhaltigkeit, Lichtverhalten, Materialphysik und Ergonomie – damit digitale Entwürfe eins zu eins mit Kameraoptiken und Werkstätten harmonieren.</p>
+                </div>
+                
+                <div class="collab-features">
+                    <div class="feature-row">
+                        <div class="feature-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        </div>
+                        <div class="feature-text">
+                            <h4 class="lang-en">Validated Scale Accuracy</h4>
+                            <h4 class="lang-de">Validierte Maßhaltigkeit</h4>
+                            
+                            <p class="lang-en">Spatial measurements are matched 1:1 with real-world dimensions for predictable camera framing.</p>
+                            <p class="lang-de">Räumliche Maße stimmen eins zu eins mit der Realität überein – für eine verlässliche Bildgestaltung.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-row">
+                        <div class="feature-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                        </div>
+                        <div class="feature-text">
+                            <h4 class="lang-en">Realistic Lighting Response</h4>
+                            <h4 class="lang-de">Natürliches Lichtverhalten</h4>
+                            
+                            <p class="lang-en">Gaussian Splat materials interact naturally with virtual lights to test lighting concepts in pre-production.</p>
+                            <p class="lang-de">Gaussian-Splat-Objekte interagieren physikalisch mit virtuellem Licht, um Ausleuchtungskonzepte vorab zu prüfen.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-row">
+                        <div class="feature-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                        </div>
+                        <div class="feature-text">
+                            <h4 class="lang-en">Set Decorator Focused UI</h4>
+                            <h4 class="lang-de">Fokus auf Szenenbild-Workflows</h4>
+                            
+                            <p class="lang-en">Developed with professional designers, avoiding complex technical barriers in favor of intuitive layout controls.</p>
+                            <p class="lang-de">Mit professionellen Szenenbildnern entwickelt – ohne technische Barrieren, dafür mit intuitivem Layout-Design.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team & Contact Section -->
+    <section class="team-section" id="team">
+        <div class="section-container">
+            <span class="section-tag center">
+                <span class="lang-en">THE DIRECTORS</span>
+                <span class="lang-de">PROJEKTLEITUNG</span>
+            </span>
+            <h2 class="section-title center">
+                <span class="lang-en">Project Leadership</span>
+                <span class="lang-de">Projektleitung</span>
+            </h2>
+            
+            <div class="team-grid">
+                <!-- Pauline Card -->
+                <div class="team-card">
+                    <div class="team-card-inner">
+                        <div class="team-meta">
+                            <h3 class="team-name">Pauline Leininger</h3>
+                            <span class="team-role lang-en">Research Lead &mdash; Immersive VR &amp; Frontend Systems</span>
+                            <span class="team-role lang-de">Forschungsleitung &mdash; Immersive VR- &amp; Frontend-Systeme</span>
+                            <span class="team-org">HFF München</span>
+                        </div>
+                        <a href="mailto:p.leininger@hff-muc.de" class="team-contact-btn" id="contact-pauline">
+                            <span>p.leininger@hff-muc.de</span>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Christoph Card -->
+                <div class="team-card">
+                    <div class="team-card-inner">
+                        <div class="team-meta">
+                            <h3 class="team-name">Christoph Weber</h3>
+                            <span class="team-role lang-en">Research Lead &mdash; Server Engine &amp; Database Infrastructure</span>
+                            <span class="team-role lang-de">Forschungsleitung &mdash; Server-Engine &amp; Datenbank-Infrastruktur</span>
+                            <span class="team-org">HFF München</span>
+                        </div>
+                        <a href="mailto:c.weber@hff-muc.de" class="team-contact-btn" id="contact-christoph">
+                            <span>c.weber@hff-muc.de</span>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- User Studies Section -->
+        <section class="studies-section" id="studies">
+            <div class="section-container">
+                <div class="studies-card">
+                    <span class="section-tag center">
+                        <span class="lang-en">NEXT STEPS / PARTICIPATE</span>
+                        <span class="lang-de">AUSBLICK / MITWIRKEN</span>
+                    </span>
+                    <h2 class="section-title center">
+                        <span class="lang-en">Future User Studies</span>
+                        <span class="lang-de">Kommende Anwendungsstudien</span>
+                    </h2>
+                    <div class="studies-content">
+                        <p class="lang-en">Once the core development of the VR Setdesigner suite is finalized, we will transition into validation and testing phases. We are planning comprehensive user studies to evaluate spatial workflow efficiencies and ergonomics under real-world film production environments.</p>
+                        <p class="lang-de">Sobald die Kernentwicklung von VR Setdesigner abgeschlossen ist, starten wir in die Validierungs- und Testphasen. Wir planen umfassende Nutzerstudien, um die Effizienz und Ergonomie der räumlichen Workflows unter realen Bedingungen einer Filmproduktion zu evaluieren.</p>
+                        
+                        <p class="lead-text center lang-en">We invite production designers, scenographers, set decorators, location scouts, and students in these fields to participate in our trials.</p>
+                        <p class="lead-text center lang-de">Wir laden Szenenbildner, Set-Designer, Set-Decorator, Location Scouts sowie Studierende dieser Fachrichtungen herzlich ein, sich an unseren Tests zu beteiligen.</p>
+                        
+                        <div class="studies-ctas">
+                            <form class="studies-form" id="studies-form">
+                                <input type="email" id="studies-email" class="studies-input" placeholder="Enter your email..." required>
+                                <button type="submit" class="btn btn-primary btn-studies-submit" id="btn-studies-submit">
+                                    <span class="lang-en">Register Interest</span>
+                                    <span class="lang-de">Interesse bekunden</span>
+                                </button>
+                            </form>
+                            <div id="studies-success" class="studies-success-msg">
+                                <span class="lang-en">Thank you. We will contact you with updates.</span>
+                                <span class="lang-de">Vielen Dank. Wir werden dich mit Neuigkeiten kontaktieren.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <span class="footer-logo">VR SETDESIGNER</span>
+                <p class="footer-copy lang-en">© 2026 Hochschule für Fernsehen und Film München. All rights reserved. Co-developed as a research initiative exploring immersive production tools.</p>
+                <p class="footer-copy lang-de">© 2026 Hochschule für Fernsehen und Film München. Alle Rechte vorbehalten. Entwickelt im Rahmen einer Forschungsinitiative für immersive Produktionswerkzeuge.</p>
+            </div>
+            <div class="footer-right">
+                <a href="#header" class="footer-link">
+                    <span class="lang-en">Back to Top</span>
+                    <span class="lang-de">Nach oben</span>
+                </a>
+                <span class="footer-divider">|</span>
+                <a href="https://www.hff-muenchen.de/de_DE/imprint" class="footer-link" id="link-imprint" target="_blank" rel="noopener noreferrer">
+                    <span class="lang-en">Imprint</span>
+                    <span class="lang-de">Impressum</span>
+                </a>
+                <span class="footer-divider">|</span>
+                <a href="#" class="footer-link" id="link-privacy">
+                    <span class="lang-en">Privacy Policy</span>
+                    <span class="lang-de">Datenschutz</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Datenschutz Modal -->
+    <div class="modal-overlay" id="modal-privacy">
+        <div class="modal-box">
+            <button class="modal-close" id="close-privacy" aria-label="Close modal">&times;</button>
+            <h3 class="lang-en">Privacy Policy</h3>
+            <h3 class="lang-de">Datenschutzerklärung</h3>
+            
+            <div class="modal-body-content">
+                <!-- English Privacy Policy -->
+                <div class="lang-en">
+                    <p><strong>1. Data Protection at a Glance</strong></p>
+                    <p>This privacy policy explains the nature, scope, and purpose of processing personal data on our website. Since this website primarily serves to present our research project, personal data is collected only to the minimum technical extent necessary (e.g., web server log files to ensure secure operation).</p>
+                    
+                    <p><strong>2. Responsible Party</strong></p>
+                    <p>Responsible for data processing on this website are the project leads of the research initiative at HFF München:<br>
+                    Pauline Leininger (p.leininger@hff-muc.de)<br>
+                    Christoph Weber (c.weber@hff-muc.de)</p>
+
+                    <p><strong>3. Your Rights</strong></p>
+                    <p>You have the right at any time to receive free information about the origin, recipient, and purpose of your stored personal data. You also have a right to request the correction, blocking, or deletion of this data. Please contact us via email for this purpose.</p>
+                </div>
+                
+                <!-- German Privacy Policy -->
+                <div class="lang-de">
+                    <p><strong>1. Datenschutz auf einen Blick</strong></p>
+                    <p>Diese Datenschutzerklärung klärt Sie über die Art, den Umfang und Zweck der Verarbeitung von personenbezogenen Daten auf unserer Website auf. Da diese Website primär der Projektvorstellung dient, werden personenbezogene Daten nur im technisch notwendigen Mindestmaß erhoben (z.B. Logfiles des Webservers zur Gewährleistung des sicheren Betriebs).</p>
+                    
+                    <p><strong>2. Verantwortliche Stelle</strong></p>
+                    <p>Verantwortlich für die Datenverarbeitung auf dieser Website sind die Projektleiter des Forschungsprojekts an der HFF München:<br>
+                    Pauline Leininger (p.leininger@hff-muc.de)<br>
+                    Christoph Weber (c.weber@hff-muc.de)</p>
+
+                    <p><strong>3. Ihre Rechte</strong></p>
+                    <p>Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten. Sie haben außerdem ein Recht, die Berichtigung, Sperrung oder Löschung dieser Daten zu verlangen. Kontaktieren Sie uns hierzu gerne per E-Mail.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript -->
+    <script src="app.js"></script>
+</body>
+</html>
